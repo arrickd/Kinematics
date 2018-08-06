@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="kinematics_style.css" rel="stylesheet" type="text/css">
+<script async="" type="text/javascript" src="kinematic_calculate.js"></script>
+</head>
+
+<body>
+<p>Use the kinematics calculator below to compute the missing 2 variables. </p>  
+<p>Acceleration is assumed constant.</p>
+<p>Unrealistic variables will produce an "Incorrect entry"</p>
+<p style="font-size: 25px">Enter 3 variables:</p>
+	
+	Distance (m): <input id="Distance" type = "text" placeholder="Distance"><br>
+  	Acceleration (m/s^2): <input id="Acceleration" type = "text" placeholder="Acceleration"><br>
+	Initial Velocity (m/s): <input id="Initial_Velocity" type = "text" placeholder="Initial velocity"><br>
+	Final Velocity (m/s): <input id="Final_Velocity" type = "text" placeholder="Final velocity"><br>
+	Time (s): <input id="Time" type = "text" placeholder="Time"><br>
+
+<button type="submit" onclick="calculate();">Calculate</button>
+	<p id="message" style="display:none">Incorrect entry</p>
+
+</body>
+</html>
