@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-<link href="kinematics_style.css" rel="stylesheet" type="text/css">
-<script async="" type="text/javascript" src="kinematic_calculate.js"></script>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+	<link href="kinematics_style.css" rel="stylesheet" type="text/css">
+	<script async="" type="text/javascript" src="kinematic_calculate.js"></script>
 </head>
 
 <body>
@@ -13,14 +13,28 @@
 <p>Unrealistic variables will produce an "Incorrect entry"</p>
 <p style="font-size: 25px">Enter 3 variables:</p>
 	
-	Distance (m): <input id="Distance" type = "text" placeholder="Distance"><br>
-  	Acceleration (m/s^2): <input id="Acceleration" type = "text" placeholder="Acceleration"><br>
-	Initial Velocity (m/s): <input id="Initial_Velocity" type = "text" placeholder="Initial velocity"><br>
-	Final Velocity (m/s): <input id="Final_Velocity" type = "text" placeholder="Final velocity"><br>
-	Time (s): <input id="Time" type = "text" placeholder="Time"><br>
+<table>	
+	<tr>
+		<td>Distance (m):</td><td><input id="Distance" type = "text" placeholder="Distance"></td>
+	</tr>
+	<tr>
+		<td>Acceleration (m/s^2):</td><td><input id="Acceleration" type = "text" placeholder="Acceleration"></td>
+	</tr>
+	<tr>
+		<td>Initial Velocity (m/s):</td><td><input id="Initial_Velocity" type = "text" placeholder="Initial velocity"></td>
+	</tr>
+	<tr>
+		<td>Final Velocity (m/s):</td><td><input id="Final_Velocity" type = "text" placeholder="Final velocity"></td>
+	</tr>
+	<tr>
+		<td>Time (s):</td><td><input id="Time" type = "text" placeholder="Time"></td>
+	</tr>
+	<tr>
+		<td><button type="submit" onclick="calculate();">Calculate</button></td><td><nobr id="message" style="display:none">Incorrect entry</nobr></td>
+	</tr>
+</table>
 
-<button type="submit" onclick="calculate();">Calculate</button>
-	<p id="message" style="display:none">Incorrect entry</p>
+	
 
 </body>
 </html>
